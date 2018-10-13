@@ -1,0 +1,13 @@
+.container {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  margin: 5% 10%;
+  text-align: center;
+  background: white;
+}
+.current-time {
+  font-size: 50pt;
+  font-weight: bold;
+  line-height: 25rem;
+}

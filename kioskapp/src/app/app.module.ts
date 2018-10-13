@@ -1,22 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-
+import { MatButtonModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
-import {MatButtonModule} from '@angular/material';
+import { CommonComponentModule } from './commoncomponent.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    CommonComponentModule
   ],
   providers: [],
+  exports: [MatButtonModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
